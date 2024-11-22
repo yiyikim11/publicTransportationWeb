@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Routes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #search-bar {
+            margin-bottom: 20px;
+        }
+
+        .feature-bus {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bus {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .fa-bus {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .bus-text {
+            flex-grow: 1;
+        }
+
+        .more-bus-text button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bus Route / Operation Hour / Frequency</h1>
+    <input type="text" class="form-control" id="search-bar" placeholder="Search for bus routes or stops" onkeyup="filterBuses()">
+
+    <div class="feature-bus" id="bus-routes">
+        <div class="bus" data-route="Line 1 Olympic Phsar Derm Ko traveling less than 5 minutes">
+            <i class="fa-solid fa-bus"><span> Line 1</span></i>
+            <form action="businformation/bus1 copy 3.html">
+                <div class="bus-text">
+                    <p>current stops: Olympic</p>
+                    <p>next stops: Phsar Derm Ko</p>
+                    <p>Bus Status: -traveling-</p>
+                    <p>ETA : less than 5 minutes</p>
+                </div>
+                <div class="more-bus-text">
+                    <button>MORE INFO</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="bus" data-route="Line 2 Olympic Phsar Derm Ko traveling less than 5 minutes">
+            <i class="fa-solid fa-bus"><span> Line 2</span></i>
+            <form action="businformation/bus1.html">
+                <div class="bus-text">
+                    <p>current stops: Olympic</p>
+                    <p>next stops: Phsar Derm Ko</p>
+                    <p>Bus Status: -traveling-</p>
+                    <p>ETA : less than 5 minutes</p>
+                </div>
+                <div class="more-bus-text">
+                    <button>MORE INFO</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="bus" data-route="Line 3 Olympic Phsar Derm Ko traveling less than 5 minutes">
+            <i class="fa-solid fa-bus"><span> Line 3</span></i>
+            <form action="businformation/bus1 copy 2.html">
+                <div class="bus-text">
+                    <p>current stops: Olympic</p>
+                    <p>next stops: Phsar Derm Ko</p>
+                    <p>Bus Status: -traveling-</p>
+                    <p>ETA : less than 5 minutes</p>
+                </div>
+                <div class="more-bus-text">
+                    <button>MORE INFO</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function filterBuses() {
+            const searchInput = document.getElementById('search-bar').value.toLowerCase();
+            const busRoutes = document.querySelectorAll('.bus');
+            
+            busRoutes.forEach(route => {
+                const routeText = route.getAttribute('data-route').toLowerCase();
+                if (routeText.includes(searchInput)) {
+                    route.style.display = 'flex';
+                } else {
+                    route.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

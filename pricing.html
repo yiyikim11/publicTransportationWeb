@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            margin-top: 30px;
+        }
+
+        .pricing-header,
+        .comparison-header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .pricing-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .table-comparison th,
+        .table-comparison td {
+            text-align: center;
+        }
+
+        .tick {
+            color: green;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/Home-page/index.html">Phnom Penh Bus</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="planning.html">Book Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Subscription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="payment_form.html">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-big">
+        <div class="row">
+            <div class="col-6 book-box">
+                <h1 class="text-box padding-1">Phnom Penh City Bus</h1>
+                <div class="line pad-cover"></div>
+                <button type="button" class="btn-book">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div class="container">
+        <div class="py-5 text-center">
+            <h2>Pricing Plans</h2>
+            <p class="lead">Choose a plan that suits your needs.</p>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-lg-4">
+                <div class="card pricing-card">
+                    <div class="card-header">
+                        <h4 class="my-0 fw-normal">Student</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$3 <small class="text-muted">/ mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Access to all routes</li>
+                            <li>Limited rides</li>
+                            <li>Email support</li>
+                        </ul>
+                        <a href="payment_form.html" class="w-100 btn btn-lg btn-primary">Get started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card pricing-card">
+                    <div class="card-header">
+                        <h4 class="my-0 fw-normal">Adult</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$5 <small class="text-muted">/ mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Unlimited rides</li>
+                            <li>Priority support</li>
+                            <li>Free cancellations</li>
+                        </ul>
+                        <a href="payment_form.html" class="w-100 btn btn-lg btn-primary">Get started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card pricing-card">
+                    <div class="card-header">
+                        <h4 class="my-0 fw-normal">Kid</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$2 <small class="text-muted">/ mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Limited rides</li>
+                            <li>Access to all routes</li>
+                            <li>Email support</li>
+                        </ul>
+                        <a href="payment_form.html" class="w-100 btn btn-lg btn-primary">Get started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparison Table -->
+        <div class="container">
+            <div class="comparison-header">
+                <h2>Compare Plans</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="table table-striped table-comparison mt-5">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Student</th>
+                                <th>Adult</th>
+                                <th>Kid</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Price</th>
+                                <td>$3 / mo</td>
+                                <td>$5 / mo</td>
+                                <td>$2 / mo</td>
+                            </tr>
+                            <tr>
+                                <th>Access to all routes</th>
+                                <td><span class="tick">✔️</span></td>
+                                <td><span class="tick">✔️</span></td>
+                                <td><span class="tick">✔️</span></td>
+                            </tr>
+                            <tr>
+                                <th>Unlimited rides</th>
+                                <td></td>
+                                <td><span class="tick">✔️</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Priority support</th>
+                                <td></td>
+                                <td><span class="tick">✔️</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Free cancellations</th>
+                                <td></td>
+                                <td><span class="tick">✔️</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Email support</th>
+                                <td><span class="tick">✔️</span></td>
+                                <td><span class="tick">✔️</span></td>
+                                <td><span class="tick">✔️</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!---footer--->
+     <footer class="footer bg-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 white-text mb-3">
+                    <h5 class="big-text">Phnom Penh Bus</h5>
+                    <p class="copyright">@ 2024 Paragon International University.<br>
+                    &copy; All rights reserved</p>
+                </div>
+                <div class="col-md-4 white-text mb-3">
+                    <h5 class="big-text">Useful links</h5>
+                    <ul class="footer-list list-edit">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="search.html">Search</a></li>
+                        <li><a href="planning.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="pricing.html">Subscription</a></li>
+                        <li><a href="payment_form.html">Subscribe</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 white-text mb-3">
+                    <h5 class="big-text">Contact</h5>
+                    <p class="address">1 Preah Monivong Blvd (93), Phnom Penh</p>
+                    <p class="tel-num">+855 123 456 789</p>
+                    <p class="email">phnompenhcitybus@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
